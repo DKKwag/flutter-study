@@ -13,7 +13,7 @@ enum RestaurantPriceRange {
 //파일이 변경되었을때 터미널에 flutter pub run build_runner build
 //프로젝트 파일이 수시로 변경될때에는 flutter pub run build_runner watch
 @JsonSerializable()
-class RestuarantModel {
+class RestaurantModel {
   final String id;
   final String name;
   @JsonKey(
@@ -27,7 +27,7 @@ class RestuarantModel {
   final int deliveryTime;
   final int deliveryFee;
 
-  RestuarantModel({
+  RestaurantModel({
     required this.id,
     required this.name,
     required this.thumbUrl,
@@ -39,10 +39,10 @@ class RestuarantModel {
     required this.deliveryFee,
   });
 
-  factory RestuarantModel.fromJson(Map<String, dynamic> json) =>
-      _$RestuarantModelFromJson(json);
+  factory RestaurantModel.fromJson(Map<String, dynamic> json) =>
+      _$RestaurantModelFromJson(json);
 
-  Map<String, dynamic> toJson() => _$RestuarantModelToJson(this);
+  Map<String, dynamic> toJson() => _$RestaurantModelToJson(this);
 
   // 기존 방식
   // factory RestuarantModel.fromJson({

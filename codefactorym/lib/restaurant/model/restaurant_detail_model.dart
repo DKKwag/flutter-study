@@ -2,10 +2,11 @@ import 'package:codefactorym/common/const/data.dart';
 import 'package:codefactorym/common/utils/data_utils.dart';
 import 'package:codefactorym/restaurant/model/restaurant_model.dart';
 import 'package:json_annotation/json_annotation.dart';
+
 part 'restaurant_detail_model.g.dart';
 
 @JsonSerializable()
-class RestaurantDetailModel extends RestuarantModel {
+class RestaurantDetailModel extends RestaurantModel {
   final String detail;
   final List<RestaurantProductModel> products;
 
